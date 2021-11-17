@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Contractor Quote Form</title>
+</head>
+<body>
+
+<center><h2>Contractor Quote Form</h2></center>
+  <div>
+    <div class="container1">
+		<form action="submit_phpcrm_form.php" method="post"> <br>
+            <input type="text" id="name" name="name"  placeholder="Name of Customer" required>
+            
+            <input type="text" id="preparedBy" name="preparedBy" placeholder="Prepared By" required>
+            <textarea id="description" name="description" style="height:80px" placeholder="Description of Work" required></textarea>  
+			<label for="site">Site of Work</label>
+            <input type="text" id="street1" name="street1"  placeholder="Street Address" required>	
+            <input type="text" id="street2" name="street2"  placeholder="Street Address">
+			<div class="row">  
+				<div class="col-50">
+					<input type="text" id="city" name="city" placeholder="City" required>
+					<input type="number" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+					<input type="number" id="phone" name="phone" placeholder="Phone" required>	
+				</div>
+				<div class="col-50">
+					<input type="text" id="state" name="state" placeholder="Region" required>
+					<input type="text" id="country" name="country" placeholder="Country" required>
+					<input type="email" id="email" name="email" placeholder="Email" required>
+				</div>
+            </div>     
+			<label for="quote">What is a construction quote?</label>
+            <input type="text" id="quote" name="quote" >
+			<label for="scopeInclude">The scope of work includes the following</label>
+            <textarea id="scopeInclude" name="scopeInclude" style="height:80px"></textarea> 
+			<label for="scopeNotInclude">The Scope of work does not include</label>
+            <textarea id="scopeNotInclude" name="scopeNotInclude" style="height:80px"></textarea> 
+			<div class="row">
+				<div class="col-50">
+					<label for="labor">Labor Cost</label>
+					<input type="text" id="labor" name="labor" placeholder="USD 0.00">
+				</div>
+				<div class="col-50">
+					<label for="materials">Materials Cost</label>
+					<input type="text" id="materials" name="materials"  placeholder="USD 0.00">
+				</div>
+			</div>
+			<label for="price">The total price of the work</label>
+			<input type="text" id="price" name="price"  placeholder="USD 0.00">
+		    <label for="tax">Taxes</label>
+            <input type="text" id="tax" name="tax"  placeholder="USD 0.00">
+            <label for="message">Other Conditions/Details</label>
+            <textarea id="message" name="message" style="height:80px" required></textarea>  
+			<p><b>Terms of Service</b></p>
+			<input type="checkbox" id="terms" name="terms" value="Yes" required>
+			<label for="terms" >I agree to the terms of service.</label ><br><br>
+			<input type="submit" value="Submit" class="btn">
+		</form>
+    </div>
+</div>
+
+</body>
+</html>
